@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music player</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<body>
+
+    <!-- music player -->
+    <div class="container">
+        <div class="music-player">
+            <nav class="navbar">
+                <div class="icons">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="icons">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="./image.jpg" alt="" class="song-img" id="song-image">
+
+            <h1>music</h1>
+
+            <p>Damtaro - Nothing (freetouse.com).mp3</p>
+            <audio src="./music.mp3"  id="song"></audio>
+            <input type="range" value="0" id="progress">
+            <div class="control">
+                <div id="icons"><i class="fa-solid fa-backward"></i></div>
+                <div id="icons" onclick="playpush()"><i class="fa-solid fa-play" id="conticon"></i></div>
+                <div id="icons"><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+<script src="funtion.js"></script>
+</body>
+</html>
